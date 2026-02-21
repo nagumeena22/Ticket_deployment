@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.excel-page {
+    min-height: 100vh;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.excel-card {
+    width: min(760px, 100%);
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.excel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.excel-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+    color: #94a3b8;
+    font-weight: 700;
+    margin: 0;
+}
+
+.excel-head h2 {
+    margin: 4px 0 6px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.excel-sub {
+    margin: 0;
+    color: #475569;
+    font-size: 0.92rem;
+}
+
+.excel-link {
+    color: #6366f1;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.excel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.excel-upload-zone {
+    border: 2px dashed #e2e8f0;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    background: #f8fafc;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.excel-upload-zone:hover {
+    border-color: #6366f1;
+    background: #f5f7ff;
+    transform: translateY(-2px);
+}
+
+.excel-upload-zone input {
+    display: none;
+}
+
+.upload-icon {
+    width: 64px;
+    height: 64px;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+}
+
+.upload-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.upload-text strong {
+    color: #1e293b;
+    font-size: 1.1rem;
+}
+
+.upload-text span {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.excel-submit {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.excel-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.excel-submit:not(:disabled):hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.excel-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: #94a3b8;
+    font-size: 0.82rem;
+}
+
+.excel-hint {
+    color: #94a3b8;
+}
+
+@media (max-width: 640px) {
+    .excel-card { padding: 22px; }
+    .excel-head { flex-direction: column; }
+    .excel-upload-zone { padding: 24px; }
+    .excel-footer { flex-direction: column; align-items: flex-start; }
+}
